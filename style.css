@@ -12,6 +12,7 @@ a {
 
 a:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 button {
@@ -33,9 +34,15 @@ button:hover {
   border: 1px solid #5f6368;
 }
 
+p {
+  color: #bdc1c6;
+  margin: auto;
+}
+
 .container {
   display: flex;
   flex-direction: column;
+  height: 100%;
 }
 .header {
   display: flex;
@@ -45,6 +52,47 @@ button:hover {
   justify-content: space-between;
 }
 
+.logo {
+  display: flex;
+  min-height: 92px;
+  flex-direction: column;
+  align-items: center;
+  max-height: 290px;
+  height: calc(100% - 560px);
+}
+
+.search {
+  max-height: 160px;
+  padding: 20px;
+}
+
 .francais {
   color: #8ab4f8;
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  background: #171717;
+  display: block;
+}
+
+.footer-top {
+  border-bottom: 1px solid #212327;
+  padding: 15px 30px;
+  font-size: 15px;
+}
+
+.footer-bottom {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.footer-bottom a {
+  padding: 15px;
+  display: inline;
+  white-space: nowrap;
+  color: #999da2;
 }
