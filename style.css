@@ -15,25 +15,6 @@ a:hover {
   cursor: pointer;
 }
 
-button {
-  color: #e8eaed;
-  box-shadow: 0 1px 3px rgb(23 23 23 / 24%);
-  background-color: #303134;
-  border: 1px solid #303134;
-  border-radius: 4px;
-  font-size: 14px;
-  margin: 11px 4px;
-  padding: 0 16px;
-  line-height: 27px;
-  height: 36px;
-  min-width: 54px;
-  text-align: center;
-  cursor: pointer;
-}
-button:hover {
-  border: 1px solid #5f6368;
-}
-
 p {
   color: #bdc1c6;
   margin: auto;
@@ -58,6 +39,29 @@ svg {
   height: 60px;
   justify-content: space-between;
   flex-shrink: 0;
+}
+
+.header button {
+  color: #252628;
+  box-shadow: 0 1px 3px rgb(23 23 23 / 24%);
+  background-color: #91b1f4;
+  border: 1px solid #303134;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.apps {
+  display: inline-block;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
 }
 
 .logo {
@@ -85,6 +89,26 @@ svg {
   max-width: 584px;
 }
 
+.search button {
+  color: #e8eaed;
+  box-shadow: 0 1px 3px rgb(23 23 23 / 24%);
+  background-color: #303134;
+  border: 1px solid #303134;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 11px 4px;
+  padding: 0 16px;
+  line-height: 27px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.search button:hover {
+  border: 1px solid #5f6368;
+}
+
 .search-bar {
   background: #202124;
   display: flex;
@@ -103,6 +127,11 @@ svg {
   display: flex;
   padding: 5px 8px 0 16px;
   padding-left: 14px;
+}
+
+.src-voice {
+  cursor: pointer;
+  margin-left: auto;
 }
 
 .lang-option {
