@@ -36,32 +36,85 @@ svg {
   display: flex;
   align-items: center;
   padding: 6px;
-  height: 60px;
+  height: 48px;
   justify-content: space-between;
   flex-shrink: 0;
 }
 
-.header button {
-  color: #252628;
-  box-shadow: 0 1px 3px rgb(23 23 23 / 24%);
-  background-color: #91b1f4;
-  border: 1px solid #303134;
-  border-radius: 4px;
-  font-size: 14px;
-  margin: 11px 4px;
-  padding: 0 16px;
-  line-height: 27px;
-  height: 36px;
-  min-width: 54px;
-  text-align: center;
-  cursor: pointer;
+.header a {
+  line-height: 24px;
+  display: inline;
+  padding-left: 15px;
+}
+
+.header-right {
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+}
+
+.header-right a {
+  color: white;
+}
+
+.inner-left {
+  padding-right: 15px;
+}
+
+.inner-right {
+  display: flex;
+  align-items: center;
 }
 
 .apps {
-  display: inline-block;
+  display: inline;
   cursor: pointer;
-  height: 40px;
-  width: 40px;
+  padding: 4px 4px 4px 4px;
+}
+
+.apps:hover {
+  border-radius: 50%;
+  background: rgba(232, 234, 237, 0.08);
+}
+
+.apps-inner {
+  padding: 8px;
+  height: 24px;
+  width: 24px;
+}
+
+.header button {
+  display: inline;
+  color: #202124;
+  box-shadow: 0 1px 3px rgb(23 23 23 / 24%);
+  background-color: #8ab4f8;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 9px 23px;
+  line-height: 16px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-left: 8px;
+  min-width: 96px;
+  letter-spacing: 0.25px;
+  vertical-align: middle;
+}
+
+.header-button {
+  display: inline;
+  flex: 0 1 auto;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.header button:hover {
+  background: #93baf9;
 }
 
 .logo {
@@ -161,15 +214,22 @@ svg {
 }
 
 .footer-bottom {
-  padding: 15px 20px;
+  padding: 0 20px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .footer-bottom a {
   padding: 15px;
-  display: inline;
+  display: inline-block;
   white-space: nowrap;
   color: #999da2;
+}
+
+@media (max-width: 1200px) {
+  .footer-bottom {
+    justify-content: space-evenly;
+  }
 }
