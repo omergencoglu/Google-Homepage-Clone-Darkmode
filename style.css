@@ -34,16 +34,19 @@ svg {
   height: 100%;
 }
 
+.vertical-center {
+  display: flex;
+  align-items: center;
+}
+
 /*=============================================
 =                  NAVIGATION                 =
 =============================================*/
 
 .header {
-  display: flex;
-  align-items: center;
+  justify-content: space-between;
   padding: 6px;
   height: 48px;
-  justify-content: space-between;
   flex-shrink: 0;
 }
 
@@ -54,12 +57,8 @@ svg {
 }
 
 .header-right {
-  height: 48px;
-  display: flex;
-  flex-direction: row;
   justify-content: center;
-  vertical-align: middle;
-  align-items: center;
+  height: 48px;
 }
 
 .header-right a {
@@ -70,15 +69,10 @@ svg {
   padding-right: 15px;
 }
 
-.inner-right {
-  display: flex;
-  align-items: center;
-}
-
 .apps {
   display: inline;
   cursor: pointer;
-  padding: 4px 4px 4px 4px;
+  padding: 4px;
 }
 
 .apps:hover {
@@ -103,20 +97,11 @@ svg {
   padding: 9px 23px;
   line-height: 16px;
   min-width: 54px;
-  text-align: center;
   cursor: pointer;
-  margin-right: 8px;
-  margin-left: 8px;
+  margin: 0 8px;
   min-width: 96px;
   letter-spacing: 0.25px;
   vertical-align: middle;
-}
-
-.header-button {
-  display: inline;
-  flex: 0 1 auto;
-  vertical-align: middle;
-  line-height: normal;
 }
 
 .header button:hover {
@@ -128,12 +113,10 @@ svg {
 =============================================*/
 
 .logo {
-  display: flex;
   min-height: 92px;
   max-height: 290px;
   height: calc(100% - 560px);
   flex-direction: column;
-  align-items: center;
   flex-shrink: 0;
 }
 
@@ -143,14 +126,12 @@ svg {
 
 .search {
   max-height: 160px;
-  padding: 20px;
+  padding: 20px 20px 18px 20px;
   flex-shrink: 0;
   position: relative;
   margin: 0 auto;
-  padding-top: 6px;
   width: 90%;
   max-width: 584px;
-  top: 14px;
 }
 
 .search-bar {
@@ -165,12 +146,7 @@ svg {
   max-width: 584px;
 }
 
-.search-bar:hover {
-  background: #303134;
-  box-shadow: 0 1px 6px 0 #171717;
-  border-color: rgba(223, 225, 229, 0);
-}
-
+.search-bar:hover,
 .search-bar:focus-within {
   background: #303134;
   box-shadow: 0 1px 6px 0 #171717;
@@ -178,13 +154,11 @@ svg {
 }
 
 .search-inside {
-  flex: 1;
   display: flex;
+  flex: 1;
 }
 
 .src-icon {
-  display: flex;
-  align-items: center;
   padding: 8px 14px;
 }
 
@@ -210,15 +184,19 @@ svg {
 
 .src-voice {
   cursor: pointer;
-  display: flex;
-  align-items: center;
   padding: 8px 15px;
 }
 
 .src-voice-inner {
   height: 24px;
   width: 24px;
-  vertical-align: middle;
+}
+
+.search-buttons {
+  padding-top: 18px;
+  top: 53px;
+  display: flex;
+  justify-content: center;
 }
 
 .search button {
@@ -233,7 +211,6 @@ svg {
   line-height: 27px;
   height: 36px;
   min-width: 54px;
-  text-align: center;
   cursor: pointer;
 }
 
@@ -241,22 +218,12 @@ svg {
   border: 1px solid #5f6368;
 }
 
-.search-buttons {
-  padding-top: 18px;
-  top: 53px;
-  display: flex;
-  justify-content: center;
-}
-
 .lang-option {
   text-align: center;
   flex-shrink: 0;
   flex-grow: 1;
-  margin-top: 10px;
   margin-bottom: 24px;
-}
-
-.lang-option p {
+  font-size: small;
 }
 
 .francais {
@@ -285,8 +252,6 @@ svg {
 
 .footer-bottom {
   padding: 0 20px;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
