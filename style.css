@@ -1,3 +1,7 @@
+/*=============================================
+=                  GENERAL                   =
+=============================================*/
+
 body {
   background-color: #202124;
   font-family: arial, sans-serif;
@@ -5,19 +9,16 @@ body {
   margin: auto;
 }
 
-a {
+a,
+p {
   color: #bdc1c6;
   text-decoration: none;
+  margin: auto;
 }
 
 a:hover {
   text-decoration: underline;
   cursor: pointer;
-}
-
-p {
-  color: #bdc1c6;
-  margin: auto;
 }
 
 svg {
@@ -32,6 +33,11 @@ svg {
   justify-content: space-between;
   height: 100%;
 }
+
+/*=============================================
+=                  NAVIGATION                 =
+=============================================*/
+
 .header {
   display: flex;
   align-items: center;
@@ -117,6 +123,10 @@ svg {
   background: #93baf9;
 }
 
+/*=============================================
+=                  MAIN CENTER                =
+=============================================*/
+
 .logo {
   display: flex;
   min-height: 92px;
@@ -170,15 +180,12 @@ svg {
 .search-inside {
   flex: 1;
   display: flex;
-  padding: 5px 8px 0 16px;
-  padding-left: 14px;
 }
 
 .src-icon {
   display: flex;
   align-items: center;
-  padding-right: 13px;
-  margin-top: -5px;
+  padding: 8px 14px;
 }
 
 .src-icon-inner {
@@ -189,7 +196,7 @@ svg {
 .src-tab {
   background-color: transparent;
   border: none;
-  margin: 0;
+  margin: 5px 0;
   padding: 0;
   color: #e8eaed;
   word-wrap: break-word;
@@ -203,7 +210,15 @@ svg {
 
 .src-voice {
   cursor: pointer;
-  margin-left: auto;
+  display: flex;
+  align-items: center;
+  padding: 8px 15px;
+}
+
+.src-voice-inner {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
 }
 
 .search button {
@@ -213,7 +228,7 @@ svg {
   border: 1px solid #303134;
   border-radius: 4px;
   font-size: 14px;
-  margin: 11px 4px;
+  margin: 11px 5px;
   padding: 0 16px;
   line-height: 27px;
   height: 36px;
@@ -237,12 +252,20 @@ svg {
   text-align: center;
   flex-shrink: 0;
   flex-grow: 1;
+  margin-top: 10px;
   margin-bottom: 24px;
+}
+
+.lang-option p {
 }
 
 .francais {
   color: #8ab4f8;
 }
+
+/*=============================================
+=                    FOOTER                  =
+=============================================*/
 
 .footer {
   background: #171717;
